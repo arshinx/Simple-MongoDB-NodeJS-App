@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 
 const port = process.env.PORT || 1337;
 
-mongoose.connect('mongodb://localhost/fooobar');
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/fooobar');
 
 let Post = mongoose.model('Post', { title: String });
 

@@ -5,7 +5,7 @@
 const http = require('http');
 const mongoose = require('mongoose');
 
-const port = process.env.PORT || 1337;
+const port = process.env.PORT || 3000;
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/fooobar');
 
